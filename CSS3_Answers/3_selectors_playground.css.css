@@ -1,0 +1,26 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style all h2 elements */
+h2 {
+  color: green;
+}
+
+/* Style using ID */
+#mainHeader {
+  font-size: 28px;
+}
+
+/* Style using class */
+.eventCard {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Grouping selector */
+h3, p {
+  font-family: Arial, sans-serif;
+}

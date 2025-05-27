@@ -1,0 +1,9 @@
+body {
+  background: #ffffff url('background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+section.header {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
