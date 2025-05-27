@@ -1,0 +1,1 @@
+SELECT event_id, COUNT(*) as registration_count FROM Registrations GROUP BY event_id ORDER BY registration_count DESC LIMIT 3;

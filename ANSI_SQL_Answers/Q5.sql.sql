@@ -1,0 +1,1 @@
+SELECT city, COUNT(DISTINCT user_id) as user_count FROM Users u JOIN Registrations r ON u.user_id = r.user_id GROUP BY city ORDER BY user_count DESC LIMIT 5;

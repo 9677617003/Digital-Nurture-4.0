@@ -1,0 +1,1 @@
+SELECT DATE_FORMAT(registration_date, '%Y-%m') as reg_month, COUNT(*) as count FROM Registrations WHERE registration_date >= CURDATE() - INTERVAL 12 MONTH GROUP BY reg_month ORDER BY reg_month;
