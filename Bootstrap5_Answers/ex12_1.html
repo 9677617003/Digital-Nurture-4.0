@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacing Utilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .box {
+            background-color: #e0f2f7;
+            border: 1px solid #0dcaf0;
+            text-align: center;
+        }
+        .section-example {
+            background-color: #d1e7dd;
+            border: 1px solid #198754;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Bootstrap Spacing Utilities</h1>
+
+        <h3>Margin Utilities</h3>
+        <div class="box m-3">
+            <p>This box has a margin of 1rem (m-3) on all sides.</p>
+        </div>
+        <div class="box mt-4">
+            <p>This box has a top margin of 1.5rem (mt-4).</p>
+        </div>
+        <div class="box me-5">
+            <p>This box has a right margin of 3rem (me-5).</p>
+        </div>
+        <div class="box mx-auto">
+            <p>This box is horizontally centered with mx-auto (needs a defined width).</p>
+        </div>
+        <div class="box mb-sm-3">
+            <p>This box has a bottom margin of 1rem (mb-sm-3) on small screens and up.</p>
+        </div>
+
+        <h3>Padding Utilities</h3>
+        <div class="box p-2">
+            <p>This box has padding of 0.5rem (p-2) on all sides.</p>
+        </div>
+        <div class="box px-4">
+            <p>This box has horizontal padding (left/right) of 1.5rem (px-4).</p>
+        </div>
+        <div class="box py-5">
+            <p>This box has vertical padding (top/bottom) of 3rem (py-5).</p>
+        </div>
+        <div class="box pt-3">
+            <p>This box has a top padding of 1rem (pt-3).</p>
+        </div>
+
+        <h3>Combined Example (Section Layout)</h3>
+        <div class="section-example my-5 py-4">
+            <h4>Section Title</h4>
+            <p class="px-3">This section has a vertical margin of 3rem (my-5) and vertical padding of 1.5rem (py-4). The paragraph inside has horizontal padding of 1rem (px-3).</p>
+            <button class="btn btn-info mt-3">Learn More</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

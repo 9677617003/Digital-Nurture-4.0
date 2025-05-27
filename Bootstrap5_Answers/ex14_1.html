@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Display Utilities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            padding: 20px;
+        }
+        .display-box {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 0.5rem;
+            padding: 20px;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #495057;
+        }
+        .info-message {
+            background-color: #d1ecf1;
+            border-color: #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 0.5rem;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4 text-center">Responsive Display & Visibility</h1>
+        <p class="lead text-center">Resize your browser window to see how elements hide, show, and change their display type based on screen size.</p>
+
+        <div class="info-message mb-5">
+            <p class="mb-0"><strong>Current Screen Size:</strong></p>
+            <p class="d-block d-md-none mb-0">You are on an <strong>Extra Small (xs)</strong> screen.</p>
+            <p class="d-none d-sm-block d-md-none mb-0">You are on a <strong>Small (sm)</strong> screen.</p>
+            <p class="d-none d-md-block d-lg-none mb-0">You are on a <strong>Medium (md)</strong> screen.</p>
+            <p class="d-none d-lg-block d-xl-none mb-0">You are on a <strong>Large (lg)</strong> screen.</p>
+            <p class="d-none d-xl-block mb-0">You are on an <strong>Extra Large (xl)</strong> or larger screen.</p>
+        </div>
+
+
+        <h3>Example 1: Hiding and Showing</h3>
+        <div class="display-box">
+            <p class="d-sm-none mb-0">This text is visible ONLY on <strong>extra small</strong> screens.</p>
+            <p class="d-none d-sm-block mb-0">This text is visible on <strong>small and larger</strong> screens.</p>
+        </div>
+
+        <h3>Example 2: Changing Display Type</h3>
+        <div class="row">
+            <div class="col-12">
+                <div class="display-box">
+                    <p class="mb-2">This element:</p>
+                    <span class="d-none d-md-block d-lg-none">
+                        <p class="mb-0">is a <strong>block</strong> element on <strong>medium</strong> screens.</p>
+                    </span>
+                    <div class="d-none d-lg-flex justify-content-center align-items-center" style="height: 50px;">
+                        <p class="mb-0">is a <strong>flex container</strong> on <strong>large and larger</strong> screens.</p>
+                    </div>
+                    <p class="d-block d-md-none mb-0">is <strong>hidden</strong> on small screens.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3>Example 3: Responsive Image Visibility</h3>
+        <div class="text-center">
+            <img src="https://placehold.co/200x150/007bff/FFFFFF?text=Mobile" class="img-fluid rounded d-md-none" alt="Mobile Image">
+            <img src="https://placehold.co/300x200/28a745/FFFFFF?text=Tablet" class="img-fluid rounded d-none d-md-inline-block d-lg-none" alt="Tablet Image">
+            <img src="https://placehold.co/400x250/dc3545/FFFFFF?text=Desktop" class="img-fluid rounded d-none d-lg-inline-block" alt="Desktop Image">
+            <p class="mt-3">Different images appear based on screen size.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

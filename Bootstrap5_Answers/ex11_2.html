@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Object Layout (Flexbox)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .media-object-custom {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+        }
+        .media-object-img {
+            width: 64px; /* Standard media object image size */
+            height: 64px;
+            object-fit: cover;
+            margin-right: 15px; /* Spacing between image and content */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Media Object Layout (Flexbox)</h1>
+
+        <div class="d-flex media-object-custom">
+            <img src="https://via.placeholder.com/64x64/007bff/FFFFFF?text=Img" class="flex-shrink-0 media-object-img" alt="Generic placeholder image">
+            <div>
+                <h5 class="mt-0">Media heading</h5>
+                <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+            </div>
+        </div>
+
+        <div class="d-flex media-object-custom">
+            <img src="https://via.placeholder.com/64x64/28a745/FFFFFF?text=User" class="flex-shrink-0 media-object-img" alt="User Avatar">
+            <div>
+                <h5 class="mt-0">Another Media Object</h5>
+                <p>This is another example of a media object layout. It's useful for comments, product listings, or any list of items with an associated image or avatar.</p>
+                <div class="d-flex mt-3">
+                    <img src="https://via.placeholder.com/48x48/ffc107/FFFFFF?text=Reply" class="flex-shrink-0 media-object-img" alt="Reply Thumbnail">
+                    <div>
+                        <h6 class="mt-0">Nested Media Object</h6>
+                        <p>And here's a nested one. You can easily create complex layouts with Bootstrap's flex utilities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

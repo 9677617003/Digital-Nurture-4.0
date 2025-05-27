@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Project Structure Explained</title>
+    <!--
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            padding: 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        h1 {
+            color: #0d6efd;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .explanation-box {
+            background-color: #e9ecef;
+            border: 1px solid #ced4da;
+            border-radius: 0.5rem;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .explanation-box h4 {
+            color: #495057;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Bootstrap Project Structure</h1>
+        <p>This page illustrates the typical file structure you'd find after downloading Bootstrap or setting up a project via npm.</p>
+
+        <div class="explanation-box">
+            <h4>1. The `css/` Folder</h4>
+            <p>This folder holds all the compiled stylesheets for Bootstrap. When you link to <code>bootstrap.min.css</code>, you're including the core styling that makes Bootstrap components look the way they do.</p>
+            <p>Example link (as seen in this file's <code>&lt;head&gt;</code>):</p>
+            <pre><code>&lt;link href="css/bootstrap.min.css" rel="stylesheet"&gt;</code></pre>
+        </div>
+
+        <div class="explanation-box">
+            <h4>2. The `js/` Folder</h4>
+            <p>This folder contains the JavaScript files necessary for Bootstrap's interactive components, such as modals, carousels, dropdowns, and more. <code>bootstrap.bundle.min.js</code> is commonly used as it includes Popper.js, a dependency for some features.</p>
+            <p>Example script link (as seen at the end of this file's <code>&lt;body&gt;</code>):</p>
+            <pre><code>&lt;script src="js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;</code></pre>
+        </div>
+
+        <div class="explanation-box">
+            <h4>3. The `icons/` Folder (Optional)</h4>
+            <p>If you've also downloaded Bootstrap Icons, they would typically reside in an <code>icons/</code> folder. This folder contains SVG files or web fonts that provide a wide range of vector icons to use in your project.</p>
+            <p>Usage would involve linking to their CSS or directly embedding SVGs, depending on the method.</p>
+        </div>
+
+        <p class="mt-4">By understanding these folders, you know where to find and link the essential Bootstrap assets for your web projects.</p>
+    </div>
+
+    <!--
+            <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Bootstrap project structure HTML loaded.');
+            console.log('Check the comments in the HTML head and body for explanations of css/, js/, and icons/ folders.');
+        });

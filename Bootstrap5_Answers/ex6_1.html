@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flexbox Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .flex-navbar {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .flex-navbar-item {
+            padding: 5px 10px;
+            margin: 5px;
+            background-color: #f8f9fa;
+            border: 1px solid #ced4da;
+            text-decoration: none;
+            color: #343a40;
+            white-space: nowrap; /* Prevent items from wrapping in a single line */
+        }
+        .flex-navbar-item:hover {
+            background-color: #e2e6ea;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid flex-navbar">
+        <nav class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center">
+            <a href="#" class="flex-navbar-item fw-bold text-primary mb-2 mb-md-0">My Brand</a>
+
+            <div class="d-flex flex-column flex-md-row">
+                <a href="#" class="flex-navbar-item">Home</a>
+                <a href="#" class="flex-navbar-item">About</a>
+                <a href="#" class="flex-navbar-item">Services</a>
+                <a href="#" class="flex-navbar-item">Contact</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Responsive Flexbox Navbar Example</h2>
+        <p>Resize your browser to see the navigation items stack vertically on small screens and arrange horizontally on medium screens and above.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
